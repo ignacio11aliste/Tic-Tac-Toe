@@ -21,7 +21,7 @@ function App() {
   };
 
   const updateBoard = (index) => {
-    // no se actualiza la posicion
+    // no se actualiza la posicion 
     // si ya tiene algo
     if (board[index] || winner) return;
     // actualizar el tablero
