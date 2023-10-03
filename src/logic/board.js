@@ -1,4 +1,4 @@
-import { WINNER_COMBOS } from "../contans.js";
+import { WINNER_COMBOS } from "../constants.js";
 
 export const checkWinnerFrom = (boardToCheck) => {
   // revisamos todas las combinaciones ganadoras
@@ -18,5 +18,8 @@ export const checkWinnerFrom = (boardToCheck) => {
 };
 
 export const checkEndGame = (newBoard) => {
+  // revisamos si hay un empate
+  // si no hay más espacios vacíos
+  // en el tablero
   return newBoard.every((square) => square !== null);
 };
